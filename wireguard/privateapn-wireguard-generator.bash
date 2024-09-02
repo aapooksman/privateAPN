@@ -36,7 +36,7 @@ EOF
 Privatekey = $clientprivkey
 Address    = 10.222.$j.$j/32
 Table      = off
-PostUp     = ip -4 route add 10.222.0.$j/32 dev SIM1.wg
+PostUp     = ip -4 route add 10.222.0.$j/32 dev SIM${i}Client.wg
 
 #SIM $i Server
 [Peer]
